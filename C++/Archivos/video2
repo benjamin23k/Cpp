@@ -1,0 +1,40 @@
+#include <iostream>
+
+using namespace std;
+
+
+class Persona
+{
+    private:
+    string nombre;
+    float Peso;
+
+    public:
+    void SetNombre(string _Nombre)
+    {
+        nombre = _Nombre;
+    }
+    string ObtenerNombre()
+    {
+        return nombre;
+    }
+
+void SetPeso(float _Peso) {Peso = _Peso;}
+float GetPeso() { return Peso; }
+
+};
+
+int main (){
+
+
+  Persona unapersona;
+
+  unapersona.SetNombre("Pedro");
+  unapersona.SetPeso(89.50);
+ 
+  cout << unapersona.ObtenerNombre();
+  cout << endl;
+  cout << unapersona.GetPeso();
+  system("pause");
+  return 0;
+}
